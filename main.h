@@ -1,7 +1,7 @@
 #ifndef _FACTOR_H_
 #define _FACTOR_H_
 
-
+#include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
