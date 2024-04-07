@@ -2,8 +2,8 @@
 
 /**
  * main - main function
- *
- *
+ * @argc: int par
+ * @argv: array par
  * Return: void
  */
 int main(int argc, char *argv[])
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while((line = getline(&buff, &buff_size, file_ptr)) != -1)
+	while ((line = getline(&buff, &buff_size, file_ptr)) != -1)
 	{
 		factorize(buff);
 	}
