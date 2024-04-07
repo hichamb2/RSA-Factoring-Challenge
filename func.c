@@ -9,7 +9,7 @@
  */
 int factorize(char *buff)
 {
-	u_int64_t number, i;
+	unsigned long long int number, i;
 
 	/*num = atoi(buffer);*/
 	number = strtoul(buff, NULL, 10);
@@ -17,7 +17,7 @@ int factorize(char *buff)
 	{
 		if (number % i == 0)
 		{
-			printf("%lu=%lu*%lu\n",number,number/i,i);
+			printf("%llu=%llu*%llu\n",number,number/i,i);
 			break;
 		}
 	}
