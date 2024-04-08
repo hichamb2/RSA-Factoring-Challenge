@@ -17,7 +17,7 @@ int factorize(char *buff)
 	{
 		if (number % i == 0)
 		{
-			printf("%i=%i*%i\n", number, number / i, i);
+			printf("%d=%d*%d\n", number, number / i, i);
 			break;
 		}
 	}
