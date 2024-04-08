@@ -9,15 +9,15 @@
  */
 int factorize(char *buff)
 {
-	unsigned long number, i;
+	u_int32_t number, i;
 
-	/*num = atoi(buffer);*/
-	number = strtoul(buff, NULL, 10);
+	number = atoi(buff);
+	/*number = strtoul(buff, NULL, 10);*/
 	for (i = 2; i < number; i++)
 	{
 		if (number % i == 0)
 		{
-			printf("%lu=%lu*%lu\n", number, number / i, i);
+			printf("%i=%i*%i\n", number, number / i, i);
 			break;
 		}
 	}
